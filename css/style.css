@@ -178,6 +178,95 @@ header {
 }
 /* Service Section */
 
+/* Reason */
+.reason-box {
+  border: 2px solid #00a3e0;
+  padding: 20px;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.reason-header {
+  display: flex;
+  align-items: center;
+}
+
+.ribbon {
+  display: inline-block;
+  position: relative;
+  top: -3rem;
+  background-color: #00a0e9;
+  color: white;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 3em;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 85%, 0% 100%);
+}
+
+.ribbon-outter {
+  position: relative;
+  top: -4.6rem;
+  border: 0.9rem solid #006f97;
+  clip-path: polygon(-3% 0%, 50% 100%, -3% 100%);
+}
+
+.reason-title {
+  position: relative;
+  top: -2.8rem;
+  width: calc(100% + 2.6rem);
+  margin-left: -8.3rem;
+  margin-right: -9rem;
+  z-index: -1;
+  height: 30px;
+  background: #00a3e0;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 5px 0;
+}
+
+.reason-heading {
+  position: relative;
+  top: -2.5rem;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.reason-content {
+  display: flex;
+  position: relative;
+  top: -2rem;
+  /* gap: 5px; */
+  flex-wrap: wrap;
+}
+
+.reason-image img {
+  max-width: 90%;
+  height: auto;
+  padding-left: 5px;
+}
+
+.reason-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.reason-text p {
+  font-size: 14px;
+  line-height: 2;
+  color: #000;
+  font-weight: 600;
+}
+/* Reason */
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .message-card-01,
