@@ -191,4 +191,14 @@ header {
   .msg-img-02 {
     width: 100%;
   }
+
+  .service-section {
+    flex-direction: column;
+    padding-bottom: 75px;
+  }
+
+  .service-card {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
