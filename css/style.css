@@ -184,7 +184,7 @@ header {
   padding: 20px;
   max-width: 70%;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .reason-header {
@@ -266,6 +266,32 @@ header {
   font-weight: 600;
 }
 /* Reason */
+/* STORY */
+.story-section {
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/bgSec04.jpg);
+  height: 350px;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background-size: cover;
+  background-position: center bottom;
+  margin-bottom: 100px;
+}
+.story {
+  width: 32%;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.story h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+.story p {
+  color: #fff;
+}
+/* STORY */
 
 /* Responsive Design */
 @media (max-width: 768px) {
