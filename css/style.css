@@ -271,7 +271,7 @@ header {
   display: flex;
   justify-content: center;
   background-image: url(../images/bgSec04.jpg);
-  height: 350px;
+  /* height: 350px; */
   padding-top: 80px;
   padding-bottom: 120px;
   background-size: cover;
@@ -297,7 +297,7 @@ header {
   justify-content: center;
   gap: 7rem;
   padding-top: 8.75rem;
-  padding-bottom: 12.5rem;
+  padding-bottom: 8.75rem;
 }
 
 table {
@@ -343,26 +343,221 @@ footer {
 /* Footer */
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .message-card-01,
-  .message-card-02 {
-    flex-direction: column;
+@media screen and (max-width: 768px) {
+  /* vision-sec */
+  .vision-section {
+    margin-bottom: 8rem;
   }
 
-  .msg-content-01,
-  .msg-img-01,
-  .msg-content-02,
-  .msg-img-02 {
+  .vision-section p {
+    width: 50%;
+  }
+  .message-card-01 {
+    flex-direction: column;
+    background-color: #f6f6f6;
+  }
+  .msg-img-01 {
     width: 100%;
   }
+  .msg-content-01,
+  .msg-content-02 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 90%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.8;
+  }
+  .message-card-02 {
+    flex-direction: column-reverse;
+    background-color: #f6f6f6;
+  }
+  .message-card-02 .msg-img-02 {
+    width: 100%;
+  }
+  /* vision-sec */
 
+  /* Service Section */
   .service-section {
     flex-direction: column;
     padding-bottom: 75px;
   }
-
   .service-card {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+  }
+  /* Service Section */
+  /* Reason Box */
+  .reason-box {
+    max-width: 90%;
+  }
+
+  .reason-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .ribbon {
+    top: -2.2rem;
+    font-size: 1.5em;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 85%, 0% 100%);
+  }
+
+  .ribbon-outter {
+    top: -3.1rem;
+    clip-path: polygon(0% 0%, 40% 57%, -10% 57%);
+  }
+
+  .reason-title {
+    top: -2.2rem;
+    width: calc(100% + 2.7rem);
+    margin-left: -6.7rem;
+    margin-right: -9rem;
+    font-size: 12px;
+  }
+
+  .reason-heading {
+    font-size: 0.9em;
+    margin-top: 1rem;
+  }
+
+  .reason-content {
+    justify-content: center;
+  }
+
+  .reason-image img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 5px;
+    padding-bottom: 15px;
+  }
+
+  .reason-text p {
+    font-size: 0.8em;
+  }
+  /* Reason Box */
+
+  /* Story Section */
+  .story-section {
+    flex-direction: column;
+    padding-bottom: 95px;
+  }
+  .story {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 50px;
+  }
+  /* Story Section */
+  .com-info-section {
+    flex-direction: column;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .com-info {
+    margin: 0;
+    width: 100%;
+  }
+  .com-map {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  .blockNav {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .blockNav.active {
+    right: 0px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .blockNav ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .blockNav ul li {
+    margin-left: 0px;
+    border-bottom: 1px solid #ccc;
+  }
+  .blockNav li a {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    color: #333;
+    transition: 1s;
+  }
+  .blockNav li a:hover {
+    background-color: #bbdbcf;
+  }
+  .menu,
+  .menu span {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .menu {
+    position: fixed;
+    top: 20px;
+    left: 25px;
+    width: 35px;
+    height: 22px;
+    z-index: 10;
+    border: none;
+    background-color: transparent;
+  }
+  .menu span {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    z-index: 10;
+  }
+  .menu span:nth-of-type(1) {
+    top: 0px;
+  }
+  .menu span:nth-of-type(2) {
+    top: 10px;
+  }
+  .menu span:nth-of-type(3) {
+    bottom: 0px;
+  }
+  .menu.active span:nth-of-type(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .menu.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .menu.active span:nth-of-type(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  .boxH1 {
+    padding-top: 100px;
   }
 }
