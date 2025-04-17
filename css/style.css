@@ -276,7 +276,6 @@ header {
   padding-bottom: 120px;
   background-size: cover;
   background-position: center bottom;
-  margin-bottom: 100px;
 }
 .story {
   width: 32%;
@@ -292,6 +291,28 @@ header {
   color: #fff;
 }
 /* STORY */
+/* COMPANY INFO */
+.com-info-section {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding-top: 8.75rem;
+  padding-bottom: 12.5rem;
+}
+
+.key,
+.value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c2b2b;
+  line-height: 1.5;
+  margin: 0.8rem 0;
+}
+
+.key {
+  text-align: right;
+}
+/* COMPANY INFO */
 
 /* Responsive Design */
 @media (max-width: 768px) {
