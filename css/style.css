@@ -295,9 +295,14 @@ header {
 .com-info-section {
   display: flex;
   justify-content: center;
-  gap: 10rem;
+  gap: 7rem;
   padding-top: 8.75rem;
   padding-bottom: 12.5rem;
+}
+
+table {
+  width: 100%;
+  height: 300px;
 }
 
 .key,
@@ -307,12 +312,35 @@ header {
   color: #2c2b2b;
   line-height: 1.5;
   margin: 0.8rem 0;
+  padding-bottom: 1rem;
+  vertical-align: top;
 }
 
 .key {
   text-align: right;
 }
+.value {
+  padding-left: 40px;
+}
+
+.value a {
+  color: #00a3e0;
+  text-decoration: none;
+  font-weight: 600;
+}
 /* COMPANY INFO */
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* Footer */
 
 /* Responsive Design */
 @media (max-width: 768px) {
