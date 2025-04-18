@@ -4,6 +4,7 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  /* overflow: hidden; */
 }
 
 @font-face {
@@ -328,6 +329,12 @@ table {
   text-decoration: none;
   font-weight: 600;
 }
+
+iframe {
+  width: 400px;
+  height: 300px;
+}
+
 /* COMPANY INFO */
 /* Footer */
 footer {
@@ -340,13 +347,19 @@ footer {
   font-size: 14px;
   font-weight: 500;
 }
+
+footer a {
+  color: #00a3e0;
+  text-decoration: none;
+  font-weight: 500;
+}
 /* Footer */
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   /* vision-sec */
   .vision-section {
-    margin-bottom: 8rem;
+    margin-bottom: 9rem;
   }
 
   .vision-section p {
@@ -393,6 +406,7 @@ footer {
   /* Reason Box */
   .reason-box {
     max-width: 90%;
+    padding-bottom: 0;
   }
 
   .reason-header {
@@ -436,7 +450,7 @@ footer {
   }
 
   .reason-text p {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   /* Reason Box */
 
@@ -466,13 +480,36 @@ footer {
     margin: 0;
     width: 100%;
   }
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer a {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 70vh;
+    margin-bottom: 40px;
+  }
   nav ul {
     flex-direction: column;
   }
-  .blockNav {
+  .nav-menu {
     width: 100%;
     height: 100vh;
     background-color: #fff;
@@ -482,12 +519,12 @@ footer {
     opacity: 0;
     visibility: hidden;
   }
-  .blockNav.active {
+  .nav-menu.active {
     right: 0px;
     opacity: 1;
     visibility: visible;
   }
-  .blockNav ul {
+  .nav-menu ul {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 0px;
@@ -497,11 +534,11 @@ footer {
     margin-right: 0px;
     margin-left: 0px;
   }
-  .blockNav ul li {
+  .nav-menu ul li {
     margin-left: 0px;
     border-bottom: 1px solid #ccc;
   }
-  .blockNav li a {
+  .nav-menu li a {
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -511,7 +548,7 @@ footer {
     color: #333;
     transition: 1s;
   }
-  .blockNav li a:hover {
+  .nav-menu li a:hover {
     background-color: #bbdbcf;
   }
   .menu,
@@ -557,7 +594,7 @@ footer {
   .menu.active span:nth-of-type(3) {
     transform: translateY(-10px) rotate(-45deg);
   }
-  .boxH1 {
-    padding-top: 100px;
+  .header-content {
+    padding-top: 265px;
   }
 }
